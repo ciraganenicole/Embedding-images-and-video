@@ -7,20 +7,89 @@ body {
     flex-wrap: wrap;
     background-color: #f1f1f1;
     width: 80%;
-    height: 80%;
+    height: 90%;
     margin: auto;
     align-items: center;
     align-content: space-around;
 }
 
 .navigation {
-    flex: 80%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
     height: 30px;
     align-items: center;
-    background-color: blue;
+    background-color: white;
     padding: 20px;
     font-size: 30px;
-    margin: 10px;
+}
+
+.mag {
+    border: 2px solid #e8eaeb;
+    height: 39px;
+    width: 60px;
+    background-color: #e8eaeb;
+    border-left: 1px solid rgb(189, 184, 184);
+}
+
+input {
+    font-size: 18px;
+    padding-left: 15px;
+    border-style: none;
+    background-color: #f1f1f1;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+    /*border: 3px solid black;*/
+    align-content: space-between;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+.side {
+    flex-direction: column;
+    align-content: space-between;
+    width: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 450px;
+    border-radius: 5px;
+    margin-left: 35px;
+}
+
+.thumbs {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbs>a {
+    color: #333;
+    text-decoration: none;
+}
+
+.thumb-image {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin: 0 0 10px;
+}
+
+.thumb-title {
+    margin: 0;
+}
+
+.video-attribute,
+.video-views {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0 0;
 }
 
 .content {
@@ -35,22 +104,21 @@ body {
     margin-bottom: 10px;
 }
 
-.side {
-    display: flex;
-    width: 300px;
-    background-color: blue;
-    padding: 20px;
-    height: 450px;
-    border-radius: 5px;
-    margin-left: 35px;
-    margin-bottom: 10px;
-}
-
 .comment {
     display: flex;
-    width: 400px;
+    width: 600px;
     background-color: black;
     margin: 10px;
-    height: 350px;
-    ;
+}
+
+.sidebar-video-text {
+    float: right;
+    margin-left: 160px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: -110px;
+}
+
+.video-attribute {
+    margin-bottom: 2px;
 }
